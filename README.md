@@ -2,7 +2,7 @@
 
 ## Welcome to Udid
 
-Welcome to MyAPI! Here you'll find all the documentation you need to get up and running with the MyAPI API.
+Welcome to Udid! Here you'll find all the documentation you need to get up and running with the Udid API.
 
 ## Want to jump right in?
 
