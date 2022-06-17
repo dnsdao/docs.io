@@ -22,42 +22,17 @@ The best way to interact with our API is to use one of our official libraries:
 
 To make your first request, send an authenticated request to the pets endpoint. This will create a `pet`, which is nice.
 
-{% swagger baseUrl="https://api.myapi.com/v1" method="get" path="/pet" summary="Create pet." %}
+{% swagger baseUrl="/dns/name" method="get" path="" summary="Reverse DNS" %}
 {% swagger-description %}
-Creates a new pet.
+
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="name" required="true" type="string" %}
-The name of the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="owner_id" required="false" type="string" %}
-The
-
-`id`
-
-of the user who owns the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="species" required="false" type="string" %}
-The species of the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="breed" required="false" type="string" %}
-The breed of the pet
+The  domain name
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Pet successfully created" %}
-```javascript
-{
-    "name"="Wilson",
-    "owner": {
-        "id": "sha7891bikojbkreuy",
-        "name": "Samuel Passet",
-    "species": "Dog",}
-    "breed": "Golden Retriever",
-}
-```
+{ "name": "asimov.com", "nameHash": "d339810ebe769de83bcc884b2d07c32e90432c2fd9049bbb692cb6f8ab140f9c", "rootHash": "b5fcf7e95d62d6d62a9de5c98619595652bd6d90a3ef4a4b23bde43cb10e3035", "owner": "d07bdb622a7e9d519a17c4c097bc479012761880", "expireTime": 1684488247, "conf": { "A": "", "AAAA": "", "BlockChain": "", "CName": "", "IOTA": "", "MX": "", "MXBCA": "", "Optional": "" }, "root": { "name": "com", "hash": "b5fcf7e95d62d6d62a9de5c98619595652bd6d90a3ef4a4b23bde43cb10e3035", "isCustom": false, "customPrice": 4000000000000000000, "isOpen": true, "owner": "6181c756e51ff37869b8b7678c4c956a1a2f5073", "expireTime": 1683595911, "conf": { "A": "", "AAAA": "", "BlockChain": "", "CName": "", "IOTA": "", "MX": "", "MXBCA": "", "Optional": "" } } }
 {% endswagger-response %}
 
 {% swagger-response status="401" description="Permission denied" %}
