@@ -20,7 +20,7 @@ The best way to interact with our API is to use one of our official libraries:
 
 ## Make your first request
 
-To make your first request, send an authenticated request to the pets endpoint. This will create a `pet`, which is nice.
+To make your first request, send an authenticated request to the pets endpoint.  which is nice.
 
 {% swagger baseUrl="/dns/name" method="get" path="" summary="Reverse DNS" %}
 {% swagger-description %}
